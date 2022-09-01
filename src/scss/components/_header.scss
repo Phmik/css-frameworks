@@ -1,0 +1,57 @@
+/* header img {
+    margin: 2rem;
+}
+
+header .nav {
+    margin: 2rem;
+    justify-content: center;
+} */
+@import "../components/_variables";
+
+header {
+
+    background-color: $bg;
+    justify-items: center;
+
+}
+// NAV
+
+.nav {
+    text-align: center;
+    font-size: 1.7rem;
+    justify-content: space-between;
+    align-items: center;
+
+    & .nav-link {
+        color: $orange;
+    }
+
+    & .nav-link:hover, .nav-link:focus {
+        color: $orangeHover;
+    }
+
+}
+
+// SEARCH
+
+.input-group {
+    justify-self: right;
+    max-width: 20rem;
+    max-height: 3rem;
+
+   & .btn.btn-primary {
+        background-color: $orange;
+        border: none;
+    }
+
+    & .btn.btn-primary:hover {
+        background-color: $orangeHover;
+    }
+
+    & input:focus {
+        border-color: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}

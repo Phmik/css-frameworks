@@ -1,0 +1,58 @@
+@import "../scss/components/_header";
+@import "../scss/components/_variables";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/forms";
+
+body {
+    margin: 0px;
+}
+
+hr {
+    border: 0.5px solid #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+// contacts 
+
+.profile-main-left {
+
+    max-width: 300px;
+    background-color: $bg;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 10px;
+    
+    & .profile-link,
+      img {
+        margin: 10px 0px 0px 0px;
+      }
+    
+    & .profile-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $font-family-sans-serif;
+        font-size: 2rem;
+        margin: 0px 5px;
+    }
+
+    & .profile-link:hover {
+        color: rgb(213, 211, 211);
+    }
+    
+    & img {
+        
+        border-radius: 50%;
+        max-width: 150px;
+    }
+
+}
+
+
+

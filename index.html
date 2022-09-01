@@ -4,15 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/main.css">
     <title>css frameworks</title>
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="image of the phillers logo">
-        <nav class="nav">
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="assets/images/logo.png" alt="image of the phillers logo">
+                    </div>
+                    <hr>
+                    <div class="col-sm">
+                        <nav class="nav">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="index.html" class="nav-link"> Home</a></li>
+                                <li class="list-inline-item"><a href="profile.html" class="nav-link"> Profile</a></li>
+                                <li class="list-inline-item"><a href="login.html" class="nav-link">Log in</a></li>
+                            </ul>
+                            <div class="input-group">
+                                <input type="search" id="form1" class="form-control" />
+                                <button type="button" class="btn btn-primary">
+                                    <span class="fas fa-search"></span>
+                                </button>
+                            </div>
+                        </nav>  
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="user-posts">
+                <div class="container">
+                    <div class="row">
+                        <div class="profile-main-left">
+                            <a href="profile.html" class="profile-link">Phm</a>
+                            <div class="col">
+                                <img src="assets/images/moi.jpg" alt="profile picture of user">
+                            </div>
+                            <div class="col">
+                                
+                                <div class="dropdown dropend">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                      Dropend
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Normal</a></li>
+                                      <li><a class="dropdown-item active" href="#">Active</a></li>
+                                      <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
             
-        </nav>
-    </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/src/js/index.js"></script>
 </body>
 </html>
