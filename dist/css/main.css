@@ -11959,6 +11959,11 @@ body {
   outline: none;
   box-shadow: none;
 }
+.dropdown .btn:active {
+  color: none;
+  box-shadow: none;
+  outline: none;
+}
 
 .feed-hr {
   border: 2px #E0915E solid;

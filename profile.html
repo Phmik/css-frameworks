@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="dist/css/main.css">
     <title>css frameworks</title>
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="image of the phillers logo">
-        <nav class="nav">
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html" class="nav-link"> Home</a></li>
-                <li class="list-inline-item"><a href="profile.html" class="nav-link"> Profile</a></li>
-                <li class="list-inline-item"><a href="login.html" class="nav-link">Log in</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-</body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="assets/images/logo.png" alt="image of the phillers logo">
+                    </div>
+                    <hr>
+                    <div class="col-sm">
+                        <nav class="nav">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="index.html" class="nav-link"> Home</a></li>
+                                <li class="list-inline-item"><a href="profile.html" class="nav-link"> Profile</a></li>
+                                <li class="list-inline-item"><a href="login.html" class="nav-link">Log in</a></li>
+                            </ul>
+                            <div class="input-group">
+                                <input type="search" id="form1" class="form-control" />
+                                <button type="button" class="btn btn-primary">
+                                    <span class="fas fa-search"></span>
+                                </button>
+                            </div>
+                        </nav>  
+                    </div>
+                </div>
+            </div>
+        </header>
