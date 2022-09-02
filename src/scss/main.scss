@@ -26,6 +26,7 @@ body {
     text-align: center;
     margin: 10px 0px;
     border-radius: 10px;
+    max-height: 25rem;
     
     & .profile-link,
       img,
@@ -93,6 +94,37 @@ body {
     opacity: 1;
 }
 
+.text-body {
+    text-transform: uppercase;
+    
+    & span {
+        text-transform: none
+    }
+}
 
+// Feed update
 
+.list-unstyled {
+    margin-left: 50px;
+
+    & .far {
+        color: $orange;
+    }
+
+    & .fa-heart {
+        color: $red;
+    }
+}
+
+.d-flex {
+
+    & .btn {
+        background-color: $orange;
+        border: none;
+    }
+
+    & .btn:hover {
+        background-color: $orangeHover;
+    }
+}
 
