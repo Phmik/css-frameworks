@@ -13,6 +13,11 @@ header {
     background-color: $bg;
     justify-items: center;
 
+    & hr {
+        border: 0.5px solid #fff;
+        opacity: 1;    
+    }
+
 }
 // NAV
 

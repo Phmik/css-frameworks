@@ -9,9 +9,7 @@ body {
     margin: 0px;
 }
 
-hr {
-    border: 0.5px solid #fff;
-}
+
 
 .wrapper {
     margin: 0 auto;
@@ -30,7 +28,8 @@ hr {
     border-radius: 10px;
     
     & .profile-link,
-      img {
+      img,
+      .dropdown {
         margin: 10px 0px 0px 0px;
       }
     
@@ -53,6 +52,47 @@ hr {
     }
 
 }
+
+// DROPDOWN
+
+.dropdown {
+
+    padding: 10px;
+
+    & .btn.btn-secondary.dropdown-toggle {
+        width: 200px;
+    }
+
+    & .btn {
+        border-radius: none;
+    }
+
+    & .dropdown-menu.show {
+        background-color: $bg;
+    }
+
+    & .dropdown-item {
+        color: $orange;
+        width: 200px;
+    }
+
+    & .dropdown-item:hover {
+        color: #fff;
+        background-color: $orangeHover;
+    }
+
+    & .btn:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.feed-hr {
+    border: 2px $orange solid;
+    opacity: 1;
+}
+
 
 
 

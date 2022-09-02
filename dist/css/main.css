@@ -11,6 +11,10 @@ header {
   background-color: #141109;
   justify-items: center;
 }
+header hr {
+  border: 0.5px solid #fff;
+  opacity: 1;
+}
 
 .nav {
   text-align: center;
@@ -11896,10 +11900,6 @@ body {
   margin: 0px;
 }
 
-hr {
-  border: 0.5px solid #fff;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
@@ -11914,7 +11914,8 @@ hr {
   border-radius: 10px;
 }
 .profile-main-left .profile-link,
-.profile-main-left img {
+.profile-main-left img,
+.profile-main-left .dropdown {
   margin: 10px 0px 0px 0px;
 }
 .profile-main-left .profile-link {
@@ -11930,6 +11931,37 @@ hr {
 .profile-main-left img {
   border-radius: 50%;
   max-width: 150px;
+}
+
+.dropdown {
+  padding: 10px;
+}
+.dropdown .btn.btn-secondary.dropdown-toggle {
+  width: 200px;
+}
+.dropdown .btn {
+  border-radius: none;
+}
+.dropdown .dropdown-menu.show {
+  background-color: #141109;
+}
+.dropdown .dropdown-item {
+  color: #E0915E;
+  width: 200px;
+}
+.dropdown .dropdown-item:hover {
+  color: #fff;
+  background-color: #faac52;
+}
+.dropdown .btn:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.feed-hr {
+  border: 2px #E0915E solid;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
