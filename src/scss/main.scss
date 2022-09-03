@@ -10,7 +10,6 @@ body {
 }
 
 
-
 .wrapper {
     margin: 0 auto;
     max-width: 1000px;
@@ -26,13 +25,16 @@ body {
     text-align: center;
     margin: 10px 0px;
     border-radius: 10px;
-    max-height: 25rem;
+    color: #fff;
     
     & .profile-link,
-      img,
       .dropdown {
         margin: 10px 0px 0px 0px;
       }
+
+    & img {
+        margin: 1rem 0 1rem 0;
+    }
     
     & .profile-link {
         color: #fff;
@@ -52,6 +54,22 @@ body {
         max-width: 150px;
     }
 
+    // PROFILE SITE 
+
+    & .display-3 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    & .p-style {
+        color: $orange;
+    }
+
+    & .list-group-item:hover {
+        color: $orange;
+        cursor: pointer;
+
+    }
 }
 
 // DROPDOWN
@@ -82,11 +100,7 @@ body {
         background-color: $orangeHover;
     }
 
-    & .btn:focus {
-        border: none;
-        outline: none;
-        box-shadow: none;
-    }
+    
 }
 
 .feed-hr {
@@ -105,7 +119,6 @@ body {
 // Feed update
 
 .list-unstyled {
-    margin-left: 50px;
 
     & .far {
         color: $orange;
@@ -127,3 +140,39 @@ body {
     }
 }
 
+// LOGIN 
+
+.container-sm {
+    justify-content: center;
+    max-width: 400px;
+}
+
+.form-login {
+
+    & .form-control:focus {
+        border: 1px solid #ced4da;
+        box-shadow: none;
+    }
+
+    & .form-control:hover {
+        background-color: rgb(240, 240, 240);
+    }
+
+    & .btn {
+        background-color: $orange;
+        border: none;
+    }
+
+    & .btn:hover {
+        background-color: $orangeHover;
+    }
+}
+
+footer {
+    margin: 0.5rem 0;
+    text-align: center;
+    background-color: $bg;
+    color: $orange;
+    height: 1.8rem;
+    text-transform: uppercase;
+}

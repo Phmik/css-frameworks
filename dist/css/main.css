@@ -8,7 +8,7 @@ header .nav {
     justify-content: center;
 } */
 header {
-  background-color: #141109;
+  background-color: #2f2f2f;
   justify-items: center;
 }
 header hr {
@@ -11907,17 +11907,19 @@ body {
 
 .profile-main-left {
   max-width: 300px;
-  background-color: #141109;
+  background-color: #2f2f2f;
   justify-content: center;
   text-align: center;
   margin: 10px 0px;
   border-radius: 10px;
-  max-height: 25rem;
+  color: #fff;
 }
 .profile-main-left .profile-link,
-.profile-main-left img,
 .profile-main-left .dropdown {
   margin: 10px 0px 0px 0px;
+}
+.profile-main-left img {
+  margin: 1rem 0 1rem 0;
 }
 .profile-main-left .profile-link {
   color: #fff;
@@ -11933,6 +11935,17 @@ body {
   border-radius: 50%;
   max-width: 150px;
 }
+.profile-main-left .display-3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.profile-main-left .p-style {
+  color: #E0915E;
+}
+.profile-main-left .list-group-item:hover {
+  color: #E0915E;
+  cursor: pointer;
+}
 
 .dropdown {
   padding: 10px;
@@ -11944,7 +11957,7 @@ body {
   border-radius: none;
 }
 .dropdown .dropdown-menu.show {
-  background-color: #141109;
+  background-color: #2f2f2f;
 }
 .dropdown .dropdown-item {
   color: #E0915E;
@@ -11953,16 +11966,6 @@ body {
 .dropdown .dropdown-item:hover {
   color: #fff;
   background-color: #faac52;
-}
-.dropdown .btn:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-.dropdown .btn:active {
-  color: none;
-  box-shadow: none;
-  outline: none;
 }
 
 .feed-hr {
@@ -11977,9 +11980,6 @@ body {
   text-transform: none;
 }
 
-.list-unstyled {
-  margin-left: 50px;
-}
 .list-unstyled .far {
   color: #E0915E;
 }
@@ -11993,6 +11993,35 @@ body {
 }
 .d-flex .btn:hover {
   background-color: #faac52;
+}
+
+.container-sm {
+  justify-content: center;
+  max-width: 400px;
+}
+
+.form-login .form-control:focus {
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+.form-login .form-control:hover {
+  background-color: rgb(240, 240, 240);
+}
+.form-login .btn {
+  background-color: #E0915E;
+  border: none;
+}
+.form-login .btn:hover {
+  background-color: #faac52;
+}
+
+footer {
+  margin: 0.5rem 0;
+  text-align: center;
+  background-color: #2f2f2f;
+  color: #E0915E;
+  height: 1.8rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

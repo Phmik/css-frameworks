@@ -1,1 +1,0 @@
-import {dropdown} from '../../node_modules/bootstrap/js/src/dropdown';
