@@ -13,24 +13,26 @@
     <div class="wrapper">
         <header>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm">
+                <div class="row justify-content-center">
+                    <div class="col">
                         <img src="assets/images/logo.png" alt="image of the phillers logo">
                     </div>
                     <hr>
-                    <div class="col-sm">
-                        <nav class="nav">
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="/" class="nav-link"> Home</a></li>
-                                <li class="list-inline-item"><a href="/profile.html" class="nav-link"> Profile</a></li>
-                                <li class="list-inline-item"><a href="/login.html" class="nav-link">Log in</a></li>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <nav class="nav align-items-center">
+                            <ul class="list-inline col-12 col-md-8 align-self-start d-flex justify-content-start">
+                                <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/" class="nav-link p-0 text-active text-decoration-underline"> Home</a></li>
+                                <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/login.html" class="nav-link p-0">Log in</a></li>
+                                <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/profile.html" class="nav-link p-0"> Profile</a></li>
                             </ul>
-                            <div class="input-group">
-                                <input type="search" id="form1" class="form-control" />
+                            <div class="input-group col">
+                                <input type="search" id="form1" class="form-control col-1" />
                                 <button type="button" class="btn btn-primary">
                                     <span class="fas fa-search"></span>
                                 </button>
                             </div>
+                          </div>
                         </nav>  
                     </div>
                 </div>
@@ -38,15 +40,15 @@
         </header>
         <main>
             <section class="user-posts">
-                <div class="container">
+                <div class="container m-0">
                     <div class="row">
-                        <div class="profile-main-left">
-                            <a href="/profile.html" class="profile-link">Phm</a>
+                        <div class="profile-main-left text-white col-12 col-md-4 mt-2 justify-content-center text-center h-100 py-3">
+                            <a href="/profile.html" class="profile-link text-uppercase mt-2">Phm</a>
                             <div class="col">
-                                <img src="assets/images/moi.jpg" alt="profile picture of user">
+                                <img src="assets/images/moi.jpg" alt="profile picture of user" class="rounded-circle my-3">
                             </div>
                             <div class="col">
-                                <div class="dropdown">
+                                <div class="dropdown my-3">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Profile
                                     </button>
@@ -67,8 +69,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-sm">
-                            <div class="card">
+                        <div class="col-12 col-md-8 col-sm-12">
+                            <div class="card mt-2">
                                 <div class="border border-left border-right px-0">
                                     <div class="p-3 border-bottom">
                                         <h4 class="d-flex align-items-center mb-0">
@@ -114,11 +116,11 @@
                     <div class="d-flex w-100 ps-3">
                       <div>
                         <a href="/profile.html">
-                          <h6 class="text-body">
+                          <h6 class="text-body text-uppercase">
                             randomHero
-                            <span class="small text-muted font-weight-normal">@randomHero</span>
-                            <span class="small text-muted font-weight-normal"> • </span>
-                            <span class="small text-muted font-weight-normal">2h ago</span>
+                            <span class="small text-muted font-weight-normal text-lowercase">@randomHero</span>
+                            <span class="small text-muted font-weight-normal text-lowercase"> • </span>
+                            <span class="small text-muted font-weight-normal text-lowercase">2h ago</span>
                           </h6>
                         </a>
                         <p style="line-height: 1.2;">
@@ -129,12 +131,12 @@
                         </p>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 pe-xl-5">
                           <li>
-                            <span class="far fa-comment"></span>
+                            <span class="far fa-comment text-primary"></span>
                           </li>
                           <li>
-                            <span  class="far fa-heart"></span><span class="small ps-2">35</span></li>
+                            <span  class="far fa-heart text-red"></span><span class="small ps-2">35</span></li>
                           <li>
-                            <span class="far fa-share-square"></span>
+                            <span class="far fa-share-square text-primary"></span>
                           </li>
                         </ul>
                       </div>
@@ -146,11 +148,11 @@
                     <div class="d-flex w-100 ps-3">
                       <div>
                         <a href="profile.html">
-                          <h6 class="text-body">
+                          <h6 class="text-body text-uppercase">
                             randomHero
-                            <span class="small text-muted font-weight-normal">@randomHero</span>
-                            <span class="small text-muted font-weight-normal"> • </span>
-                            <span class="small text-muted font-weight-normal">2h ago</span>
+                            <span class="small text-muted font-weight-normal text-lowercase">@randomHero</span>
+                            <span class="small text-muted font-weight-normal text-lowercase"> • </span>
+                            <span class="small text-muted font-weight-normal text-lowercase">2h ago</span>
                           </h6>
                         </a>
                         <p style="line-height: 1.2;">
@@ -161,12 +163,12 @@
                         </p>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 pe-xl-5">
                           <li>
-                            <span class="far fa-comment"></span>
+                            <span class="far fa-comment text-primary"></span>
                           </li>
                           <li>
-                            <span class="far fa-heart"></span><span class="small ps-2">35</span></li>
+                            <span class="far fa-heart text-red"></span><span class="small ps-2">35</span></li>
                           <li>
-                            <span class="far fa-share-square"></span>
+                            <span class="far fa-share-square text-primary"></span>
                           </li>
                         </ul>
                       </div>
@@ -178,11 +180,11 @@
                     <div class="d-flex w-100 ps-3">
                       <div>
                         <a href="/profile.html">
-                          <h6 class="text-body">
+                          <h6 class="text-body text-uppercase">
                             randomHero
-                            <span class="small text-muted font-weight-normal">@randomHero</span>
-                            <span class="small text-muted font-weight-normal"> • </span>
-                            <span class="small text-muted font-weight-normal">2h ago</span>
+                            <span class="small text-muted font-weight-normal text-lowercase">@randomHero</span>
+                            <span class="small text-muted font-weight-normal text-lowercase"> • </span>
+                            <span class="small text-muted font-weight-normal text-lowercase">2h ago</span>
                           </h6>
                         </a>
                         <p style="line-height: 1.2;">
@@ -193,12 +195,12 @@
                         </p>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 pe-xl-5">
                           <li>
-                            <span class="far fa-comment"></span>
+                            <span class="far fa-comment text-primary"></span>
                           </li>
                           <li>
-                            <span class="far fa-heart"></span><span class="small ps-2">35</span></li>
+                            <span class="far fa-heart text-red"></span><span class="small ps-2">35</span></li>
                           <li>
-                            <span class="far fa-share-square"></span>
+                            <span class="far fa-share-square text-primary"></span>
                           </li>
                         </ul>
                       </div>
@@ -210,11 +212,11 @@
                     <div class="d-flex w-100 ps-3">
                       <div>
                         <a href="profile.html">
-                          <h6 class="text-body">
+                          <h6 class="text-body text-uppercase">
                             randomHero
-                            <span class="small text-muted font-weight-normal">@randomHero</span>
-                            <span class="small text-muted font-weight-normal"> • </span>
-                            <span class="small text-muted font-weight-normal">2h ago</span>
+                            <span class="small text-muted font-weight-normal text-lowercase">@randomHero</span>
+                            <span class="small text-muted font-weight-normal text-lowercase"> • </span>
+                            <span class="small text-muted font-weight-normal text-lowercase">2h ago</span>
                           </h6>
                         </a>
                         <p style="line-height: 1.2;">
@@ -225,21 +227,26 @@
                         </p>
                         <ul class="list-unstyled d-flex justify-content-between mb-0 pe-xl-5">
                           <li>
-                            <span class="far fa-comment"></span>
+                            <span class="far fa-comment text-primary"></span>
                           </li>
                           <li>
-                            <span class="far fa-heart"></span><span class="small ps-2">35</span></li>
+                            <span class="far fa-heart text-red"></span><span class="small ps-2">35</span></li>
                           <li>
-                            <span class="far fa-share-square"></span>
+                            <span class="far fa-share-square text-primary"></span>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  </div>
+                  </div>
+                  </div>
             </section>
         </main>
         <footer>
-          &copy;Phillers
+          <div class="footer">
+            &copy;Phillers
+        </div>
         </footer>
     </div>
 </body>

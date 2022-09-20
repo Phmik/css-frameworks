@@ -1,4 +1,17 @@
-$orange: #E0915E;
-$orangeHover: #faac52;
+$primary: #E0915E;
+$secondary: #faac52;
 $bg: #2f2f2f;
-$red: #e70000
+$red: #e70000;
+$white: #fff;
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "red":        $red,
+    "white":      $white,
+    "active":     $secondary,
+) !default;
+
+$input-border-width:              0.1rem;
+$input-btn-focus-width:           0;
+$input-btn-focus-box-shadow:      0;

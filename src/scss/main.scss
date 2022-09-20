@@ -1,14 +1,16 @@
-@import "../scss/components/_header";
-@import "../scss/components/_variables";
+@import "../scss/components/_header.scss";
+@import "../scss/components/_variables.scss";
+@import "../scss/components/media.scss";
 @import "../../node_modules/bootstrap/scss/_functions";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/dropdown";
 @import "../../node_modules/bootstrap/scss/forms";
 
-body {
-    margin: 0px;
-}
 
+
+.container {
+    max-width: 100%;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -19,56 +21,27 @@ body {
 
 .profile-main-left {
 
-    max-width: 300px;
     background-color: $bg;
-    justify-content: center;
-    text-align: center;
-    margin: 10px 0px;
-    border-radius: 10px;
-    color: #fff;
-    
-    & .profile-link,
-      .dropdown {
-        margin: 10px 0px 0px 0px;
-      }
 
-    & img {
-        margin: 1rem 0 1rem 0;
-    }
-    
     & .profile-link {
-        color: #fff;
         text-transform: uppercase;
         font-family: $font-family-sans-serif;
         font-size: 2rem;
-        margin: 0px 5px;
     }
 
     & .profile-link:hover {
-        color: rgb(213, 211, 211);
+        color: $secondary;
     }
     
     & img {
-        
-        border-radius: 50%;
         max-width: 150px;
     }
 
     // PROFILE SITE 
 
-    & .display-3 {
-        color: #fff;
-        text-transform: uppercase;
-    }
-
-    & .p-style {
-        color: $orange;
-    }
-
     & .list-group-item:hover {
-        color: $orange;
+        color: $secondary;
         cursor: pointer;
-
     }
 }
 
@@ -76,14 +49,8 @@ body {
 
 .dropdown {
 
-    padding: 10px;
-
     & .btn.btn-secondary.dropdown-toggle {
-        width: 200px;
-    }
-
-    & .btn {
-        border-radius: none;
+        width: 200px ;
     }
 
     & .dropdown-menu.show {
@@ -91,54 +58,21 @@ body {
     }
 
     & .dropdown-item {
-        color: $orange;
-        width: 200px;
+        color: $primary;
     }
 
     & .dropdown-item:hover {
-        color: #fff;
-        background-color: $orangeHover;
+        color: $white;
+        background-color: $secondary;
     }
-
-    
 }
 
 .feed-hr {
-    border: 2px $orange solid;
+    border: 2px $primary solid;
     opacity: 1;
 }
 
-.text-body {
-    text-transform: uppercase;
-    
-    & span {
-        text-transform: none
-    }
-}
 
-// Feed update
-
-.list-unstyled {
-
-    & .far {
-        color: $orange;
-    }
-
-    & .fa-heart {
-        color: $red;
-    }
-}
-.d-flex {
-
-    & .btn {
-        background-color: $orange;
-        border: none;
-    }
-
-    & .btn:hover {
-        background-color: $orangeHover;
-    }
-}
 
 // LOGIN 
 
@@ -147,32 +81,11 @@ body {
     max-width: 400px;
 }
 
-.form-login {
-
-    & .form-control:focus {
-        border: 1px solid #ced4da;
-        box-shadow: none;
-    }
-
-    & .form-control:hover {
-        background-color: rgb(240, 240, 240);
-    }
-
-    & .btn {
-        background-color: $orange;
-        border: none;
-    }
-
-    & .btn:hover {
-        background-color: $orangeHover;
-    }
-}
-
-footer {
+.footer {
     margin: 0.5rem 0;
     text-align: center;
     background-color: $bg;
-    color: $orange;
+    color: $primary;
     height: 1.8rem;
     text-transform: uppercase;
 }
