@@ -1,0 +1,41 @@
+
+@import "../components/_variables";
+
+header {
+
+    background-color: $bg;
+
+    & img {
+        max-width: 100%;
+    }
+
+    & hr {
+        border: 1px solid $white;
+        opacity: 1;    
+    }
+
+    & .list-inline {
+        margin: 0;
+    }
+
+}
+// NAV
+
+.nav {
+    font-size: 1.7rem;
+    max-width: 100%;
+
+    & .nav-link:hover, .nav-link:focus {
+        color: $secondary;
+    }
+}
+
+// SEARCH
+
+.input-group {
+    justify-self: right;
+    max-width: 100%;
+    max-height: 2rem;
+}
+
+

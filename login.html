@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <title>css frameworks</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <img src="assets/images/logo.png" alt="image of the phillers logo">
+                    </div>
+                    <hr>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <nav class="nav align-items-center">
+                            <div class="col-12 col-md-8">
+                                <ul class="list-inline align-self-start d-flex justify-content-start">
+                                    <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/" class="nav-link p-0"> Home</a></li>
+                                    <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/login.html" class="nav-link p-0 text-active text-decoration-underline">Log in</a></li>
+                                    <li class="list-inline-item col-md-3 col-sm-4 col-4"><a href="/profile.html" class="nav-link p-0"> Profile</a></li>
+                                </ul>
+                            </div>
+                            <div class="input-group col">
+                                <input type="search" id="form1" class="form-control col-1" />
+                                <button type="button" class="btn btn-primary">
+                                    <span class="fas fa-search"></span>
+                                </button>
+                            </div>
+                          </div>
+                        </nav>  
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-sm">
+                <div class="border border-left border-right px-0">
+                <div class="p-3 border-bottom">
+                    <p class="lead">Please put in your login details</p>
+                    <form class="form-login" action="/profile.html">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" required minlength="8" maxlength="20">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, or special characters
+                        </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </main>
+        <footer>
+             &copy;Phillers
+        </footer>
+        </div>
+        
+        </body>

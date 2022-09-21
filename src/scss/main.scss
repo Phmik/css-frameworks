@@ -1,0 +1,85 @@
+@import "../scss/components/_header.scss";
+@import "../scss/components/_variables.scss";
+@import "../scss/components/media.scss";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/forms";
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+// contacts 
+
+.profile-main-left {
+
+    background-color: $bg;
+
+    & .profile-link {
+        text-transform: uppercase;
+        font-family: $font-family-sans-serif;
+        font-size: 2rem;
+    }
+
+    & .profile-link:hover {
+        color: $secondary;
+    }
+    
+    & img {
+        max-width: 150px;
+    }
+
+    // PROFILE SITE 
+
+    & .list-group-item:hover {
+        color: $secondary;
+        cursor: pointer;
+    }
+}
+
+// DROPDOWN
+
+.dropdown {
+
+    & .btn.btn-secondary.dropdown-toggle {
+        width: 200px ;
+    }
+
+    & .dropdown-menu.show {
+        background-color: $bg;
+    }
+
+    & .dropdown-item {
+        color: $primary;
+    }
+
+    & .dropdown-item:hover {
+        color: $white;
+        background-color: $secondary;
+    }
+}
+
+.feed-hr {
+    border: 2px $primary solid;
+    opacity: 1;
+}
+
+
+
+// LOGIN 
+
+.container-sm {
+    justify-content: center;
+    max-width: 400px;
+}
+
+footer {
+    margin: 0.5rem 0;
+    text-align: center;
+    background-color: $bg;
+    color: $primary;
+    height: 1.8rem;
+    text-transform: uppercase;
+}
